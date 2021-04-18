@@ -5,16 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { SharedModule } from './shared/shared.module';
+import { AboutComponent } from './about/components/about/about.component';
+import { LayoutComponent } from './layout/layout.component';
+import { AboutModule } from './about/about.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HomeModule,
-    SharedModule
+    SharedModule,
+    AboutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

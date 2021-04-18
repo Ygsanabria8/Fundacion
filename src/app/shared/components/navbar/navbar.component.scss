@@ -39,7 +39,11 @@ nav{
             &:hover{
                 color: #FFEB00;
                 text-decoration: none;
+                cursor: pointer;
             }
+        }
+        a.active{
+            color: #FFEB00;
         }
     }
 }
