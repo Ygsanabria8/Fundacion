@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Fundacion"
+    }
+  },
+  "defaultProject": "Fundacion",
+  "cli": {
+    "analytics": false
+  }
 }
