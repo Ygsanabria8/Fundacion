@@ -1,0 +1,31 @@
+.mision{
+    display: flex;
+    flex-direction: row;
+    &-text{
+        background-color: #1461BA;
+        width: 50vw;
+        height: 700px;
+        border-bottom-right-radius: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 20px 100px;
+    }
+    &-title{
+        font-size: 60px;
+        font-weight: 900;
+        color: #FFF;
+    }
+    &-subtitle{
+        font-size: 24px;
+        font-weight: 900;
+        color: #FFF;
+    }
+    &-img{
+        margin: auto;
+        &-size{
+            width: 800px;
+            height: 600px;
+        }
+    }
+}
