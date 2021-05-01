@@ -1,7 +1,5 @@
-footer{
-    background-color: #1461BA;
-}
 .footer{
+    background-color: #1461BA;
     &-content{
         height: 200px;
         padding: 40px 0;
@@ -51,4 +49,27 @@ footer{
     font-size: 20px;
     line-height: 20px;
     padding: 30px;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .footer{
+        &-content{
+            flex-direction: column;
+            height: auto;
+        }
+        &-logo{
+            width: 100%;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        &-menu{
+            flex-direction: column;
+            padding: 0;
+        }
+    }
+    .copyright{
+        text-align: center;
+        padding: 20px 0px;
+    }
 }

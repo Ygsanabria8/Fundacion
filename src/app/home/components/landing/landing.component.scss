@@ -7,6 +7,7 @@
     &-content{
         height: 50vh;
         display: flex;
+        flex-direction: row;
         align-items: center;
     }
     &-title{
@@ -40,5 +41,29 @@
         font-size: 16px;
         font-weight: 600;
         border-radius: 10px;
+    }
+}
+@media (max-width: 600px){
+    .body{
+        &-content{
+            flex-direction: column;
+            
+        }
+        &-title{
+            font-size: 60px;
+            text-align: center;
+            line-height: 60px;
+        }
+        &-subtitle{
+            font-size: 24px;
+            text-align: left;
+            line-height: 20px;
+            padding: 0 20px;
+        }
+    }
+    .btn{
+        &-more{
+            width: 100%;
+        }
     }
 }
