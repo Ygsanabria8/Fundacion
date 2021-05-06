@@ -3,6 +3,7 @@
     padding: 100px 0px;
     &-content{
         display: flex;
+        align-items: center;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -34,7 +35,7 @@
             font-family: 'Poppins', sans-serif;
             font-weight: 400;
             font-size: 14px;
-            text-align: left;
+            text-align: justify;
         }
         &-btn{
             &-more{
