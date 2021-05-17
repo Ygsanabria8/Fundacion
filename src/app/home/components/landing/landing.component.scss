@@ -4,8 +4,12 @@
         display: flex;
         align-items: center;
     }
+    &-image{
+        height: auto;
+        width: 20vw;
+    }
     &-content{
-        height: 50vh;
+        min-height: 500px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -18,6 +22,7 @@
         letter-spacing: 1.71px;
     }
     &-subtitle{
+        margin-top: 30px;
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
         font-size: 26px;

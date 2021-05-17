@@ -11,19 +11,14 @@
     align-items: center;
     justify-content: space-around;
     &-content{
-        margin: 20px 0;
+        margin: 20px 50px;
         display: flex;
         flex-direction: row;
     }
-    &-tittle{
-        color: black;
-        font-size: 24px;
-        //text-transform: uppercase;
-        font-weight: 600;
-        text-align: left;
-        line-height: 40px;
-        padding-left: 15px;
-        padding-right: 15px;
+    &-title{
+        margin: 10px 20px;
+        height: 5%;
+        width: 5%;
     }
     &-subtittle{
         color: black;
