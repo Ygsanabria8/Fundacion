@@ -47,3 +47,12 @@ nav{
         }
     }
 }
+@media (max-width: 600px){
+
+    .navbar{
+        &-logo{
+            font-size: 30px;
+        }
+
+    }   
+}

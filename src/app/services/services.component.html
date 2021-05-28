@@ -1,5 +1,5 @@
-<div class="service">
-    <div class="container">
+<div *ngIf="!responsive" class="service">
+    <div class="container container-fluid">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -126,5 +126,174 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
+    </div>
+</div>
+
+<div *ngIf="responsive">
+    <div class="service">
+        <div class="container ">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="service-slide">
+                        <div class="academic-card">
+                            <img class="academic-card-img" src="\assets\img\Sombrero.png " alt="">
+                            <p class="academic-card-title">Educación de la primera infancia.</p>
+                            <p class="academic-card-subtitle">Educación preescolar.</p>
+                            <button class="academic-card-btn-more" (click)="goAbout()">
+                                Más de nosotros
+                            </button>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="service-slide">
+                        <div class="academic-card">
+                            <img class="academic-card-img" src="\assets\img\Sombrero.png " alt="">
+                            <p class="academic-card-title">Cuidado de niños preescolar.</p>
+                            <p class="academic-card-subtitle">Con horarios flexibles.</p>
+                            <button class="academic-card-btn-more" (click)="goAbout()">
+                                Más de nosotros
+                            </button>
+                        </div>
+                    </div>    
+                  </div>
+                  <div class="carousel-item">
+                    <div class="service-slide">
+                        <div class="academic-card">
+                            <img class="academic-card-img" src="\assets\img\Sombrero.png " alt="">
+                            <p class="academic-card-title">Asesoría y recogida de niños.</p>
+                            <p class="academic-card-subtitle">Servivio de asesoría de tareas y almuerzo. (En presencialidad).</p>
+                            <button class="academic-card-btn-more" (click)="goAbout()">
+                                Más de nosotros
+                            </button>
+                        </div>
+                    </div>    
+                  </div>
+                  <div class="carousel-item">
+                    <div class="service-slide">
+                        <div class="academic-card">
+                            <img class="academic-card-img" src="\assets\img\Sombrero.png " alt="">
+                            <p class="academic-card-title">Asesorías pedagógicas.</p>
+                            <p class="academic-card-subtitle">→ Lecto-escritura.</p>
+                            <p class="academic-card-subtitle">→ Pre-escritura.</p>
+                            <p class="academic-card-subtitle">→ Matemáticas, Álgebra, Trigonometría y Cálculo.</p>
+                            <p class="academic-card-subtitle">→ Química.</p>
+                            <p class="academic-card-subtitle">→ Inglés.</p>
+                            <button class="academic-card-btn-more" (click)="goAbout()">
+                                Más de nosotros
+                            </button>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="service-slide">
+                        <div class="academic-card">
+                            <img class="academic-card-img" src="\assets\img\Sombrero.png " alt="">
+                            <p class="academic-card-title">Validación primaria.</p>
+                            <p class="academic-card-subtitle">Validación de los cursos de la básica primaria.</p>
+                            <button class="academic-card-btn-more" (click)="goAbout()">
+                                Más de nosotros
+                            </button>
+                        </div>
+                    </div>    
+                  </div>
+                  <div class="carousel-item">
+                    <div class="service-slide">
+                        <div class="academic-card">
+                            <img class="academic-card-img" src="\assets\img\Sombrero.png " alt="">
+                            <p class="academic-card-title">Validación bachillerato.</p>
+                            <p class="academic-card-subtitle">Validación de los cursos de bachillerato.</p>
+                            <button class="academic-card-btn-more" (click)="goAbout()">
+                                Más de nosotros
+                            </button>
+                        </div>
+                    </div>    
+                  </div>
+                  <div class="carousel-item">
+                    <div class="service-slide">
+                        <div class="academic-card">
+                            <img class="academic-card-img" src="\assets\img\Sombrero.png " alt="">
+                            <p class="academic-card-title">Aceleración de cursos.</p>
+                            <p class="academic-card-subtitle">Ejemplo: Un estudiante está cursando 6°, puede acelerar 6° y 7° en un año, y 8° y 9° al siguiente año.</p>
+                            <button class="academic-card-btn-more" (click)="goAbout()">
+                                Más de nosotros
+                            </button>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="service-slide">
+                        <div class="academic-card">
+                            <img class="academic-card-img" src="\assets\img\Sombrero.png " alt="">
+                            <p class="academic-card-title">Asesorías contables.</p>
+                            <p class="academic-card-subtitle"></p>
+                            <button class="academic-card-btn-more" (click)="goAbout()">
+                                Más de nosotros
+                            </button>
+                        </div>
+                    </div>    
+                  </div>
+                  <div class="carousel-item">
+                    <div class="service-slide">
+                        <div class="academic-card">
+                            <img class="academic-card-img" src="\assets\img\Sombrero.png " alt="">
+                            <p class="academic-card-title">Asesorías legales.</p>
+                            <p class="academic-card-subtitle"></p>
+                            <button class="academic-card-btn-more" (click)="goAbout()">
+                                Más de nosotros
+                            </button>
+                        </div>
+                    </div>    
+                  </div>
+                  <div class="carousel-item">
+                    <div class="service-slide">
+                        <div class="academic-card">
+                            <img class="academic-card-img" src="\assets\img\Sombrero.png " alt="">
+                            <p class="academic-card-title">Asesorías psicológicas.</p>
+                            <p class="academic-card-subtitle"></p>
+                            <button class="academic-card-btn-more" (click)="goAbout()">
+                                Más de nosotros
+                            </button>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="service-slide">
+                        <div class="academic-card">
+                            <img class="academic-card-img" src="\assets\img\Sombrero.png " alt="">
+                            <p class="academic-card-title">Curso de manipulación de alimentos.</p>
+                            <p class="academic-card-subtitle"></p>
+                            <button class="academic-card-btn-more" (click)="goAbout()">
+                                Más de nosotros
+                            </button>
+                        </div>
+                    </div>    
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
     </div>
 </div>
