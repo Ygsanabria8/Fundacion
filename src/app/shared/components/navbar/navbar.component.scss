@@ -3,8 +3,9 @@ nav{
 }
 .navbar{
     &-logo{
-        font-size: 46px;
-        letter-spacing: 5px;
+        font-size: 50px;
+        letter-spacing: 2px;
+        font-weight: 900;
         color: #FFF;
         font-family: 'Merriweather Sans', sans-serif;
         text-transform: uppercase;
@@ -51,8 +52,15 @@ nav{
 
     .navbar{
         &-logo{
-            font-size: 30px;
+            font-size: 34px;
         }
-
+        &-menu{
+            padding: 0;
+        }
+        &-item{
+            a{
+                font-size: 12px;
+            }
+        }
     }   
 }
